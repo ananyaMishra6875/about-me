@@ -20,7 +20,7 @@ body {
     font-family: 'CustomFont';
     margin: 0;
     padding: 0px;
-    background-color: #837eb2;
+    background-color: #8982c6;
     display: flex;
     flex-direction: column;
 }
@@ -39,25 +39,13 @@ p {
     font-size: 20px;
     line-height: 1.5;
 }
-/* button styles */
-button {
-    background-color: #605a91;
-    border: none;
+.highlight {
+    background-color: #8870c1;
     color: white;
-    padding: 12px 32px;
-    text-align: center;
-    text-decoration: none;
-    font-family: 'CustomFont';
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 0px;
 }
-button:hover {
-    background-color: #524c81;
-}
-.header-button {
+
+/* button styles */
+.button {
     background-color: #605a91;
     border: none;
     color: white;
@@ -72,18 +60,33 @@ button:hover {
     cursor: pointer;
     border-radius: 0px;
 }
-.header-button:hover {
+.button:hover {
     background-color: #524c81;
 }
-.header-button-container {
+.header-container {
     display: flex;
     justify-content: space-between;
+}
+.button2 {
+    background-color: #605a91;
+    border: none;
+    color: white;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'CustomFont';
+    display: inline-block;
+    font-size: 28px;
+    cursor: pointer;
+    border-radius: 0px;
+    width: 200px;
+    margin-left: 260px;
 }
 
 /* link styles */
 .menu-container {
-    background: #a09ccb;
-    padding: 20px;
+    background: #a7a2de;
+    padding: 30px;
     margin: 14px auto;
     margin-bottom: 0;
 }
@@ -96,11 +99,11 @@ button:hover {
 .nav-links a {
     color: white;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 25px;
     padding: 8px 16px;
     border-radius: 0px;
     background-color: #605a91;
-    transition: background-color; 
+
 }
 .nav-links a:hover {
     background-color: #524c81;
@@ -125,7 +128,7 @@ li {
 .home-content {
     display: flex;
     margin-top: 0px; 
-    height: calc(100vh - 0px); 
+    height: calc(100vh - 70px); 
     position: relative;
 }
 .rectangle-overlay {
@@ -136,4 +139,8 @@ li {
     height: 400px; /* cut 70px off bottom */
     background-color: #a792d8;
     z-index: 2000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color:#ffffff;
 }
