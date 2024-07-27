@@ -1,15 +1,19 @@
+/* fonts */
 @font-face {
     font-family: 'CustomFont';
     src: url('fonts/Silkscreen-Regular.ttf');
 }
+
+/* general styles */
 body {
     font-family: 'CustomFont';
 }
 header {
     background-color: #22365b;
     color: white;
-    padding: 10px 0;
-    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 0;
+    /* text-align: center; */
 }
 body {
     font-family: 'CustomFont';
@@ -22,16 +26,17 @@ body {
     margin: 20px auto;
     background: #d7d9ff;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    /* box-shadow: 0 0 10px rgba(0,0,0,0.5); */
 }
 h1 {
-    font-size: 2em;
-    margin-bottom: 0.5em;
+    font-size: 32px;
+    margin-bottom: 8px;
 }
 p {
-    font-size: 1.3em;
+    font-size: 20px;
     line-height: 1.5;
 }
+/* button styles */
 button {
     background-color: #605a91;
     border: none;
@@ -49,11 +54,54 @@ button {
 button:hover {
     background-color: #524c81;
 }
-ul {
+.header-button {
+    background-color: #605a91;
+    border: none;
+    color: white;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'CustomFont';
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 0px;
+}
+.header-button:hover {
+    background-color: #524c81;
+}
+.header-button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* link styles */
+.menu-container {
+    background: #d7d9ff;
+    padding: 20px;
+    margin: 14px auto;
+    margin-bottom: 0;
+}
+.nav-links {
     list-style-type: none;
     margin: 0;
     padding: 0;
-  }
+    text-align: center;
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 8px 16px;
+    border-radius: 0px;
+    background-color: #605a91;
+    transition: background-color; 
+}
+.nav-links a:hover {
+    background-color: #524c81;
+}
 li {
     display: inline;
 }
