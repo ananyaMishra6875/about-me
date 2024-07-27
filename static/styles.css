@@ -14,12 +14,15 @@ header {
     padding-top: 10px;
     padding-bottom: 0;
     /* text-align: center; */
+    z-index: 1000;
 }
 body {
     font-family: 'CustomFont';
     margin: 0;
     padding: 0px;
     background-color: #837eb2;
+    display: flex;
+    flex-direction: column;
 }
 .container {
     width: 90%;
@@ -79,7 +82,7 @@ button:hover {
 
 /* link styles */
 .menu-container {
-    background: #d7d9ff;
+    background: #a09ccb;
     padding: 20px;
     margin: 14px auto;
     margin-bottom: 0;
@@ -104,4 +107,33 @@ button:hover {
 }
 li {
     display: inline;
+}
+
+/* divs */
+.left-side {
+    background-color: #e0d7ff; 
+    width: 50vw; 
+    height: 100%; 
+    overflow: hidden;
+}
+.right-side {
+    background-color: #cabef6;
+    flex-grow: 1; 
+    height: 100%;
+    overflow: hidden;
+}
+.home-content {
+    display: flex;
+    margin-top: 0px; 
+    height: calc(100vh - 0px); 
+    position: relative;
+}
+.rectangle-overlay {
+    position: absolute;
+    top: 50px; 
+    left: 50px; 
+    width: 760px; 
+    height: 400px; /* cut 70px off bottom */
+    background-color: #a792d8;
+    z-index: 2000;
 }
