@@ -155,3 +155,11 @@ li {
     color:#ffffff;
     transform: scale(0.9);
 }
+.bottom-rectangle {
+    position: absolute;
+    bottom: 0px; 
+    left: 0px; 
+    width: 50.6%; 
+    height: 20px; 
+    background-color: #1B4111;
+}
