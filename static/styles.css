@@ -113,6 +113,10 @@ p {
 .nav-links a:hover {
     background-color: #43733a;
 }
+.nav-links li {
+    display: inline-block;
+    margin: 0 15px;
+}
 li {
     display: inline;
 }
