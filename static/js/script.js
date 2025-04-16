@@ -1,17 +1,11 @@
-// function showMessage() {
-//     let message = "Hello, Ananya!";
-//     document.getElementById('message').innerHTML = message;
-// }
+function showContent(sectionId) {
+    // content sections
+    const sections = document.querySelectorAll('.content-section');
+    sections.forEach(section => section.style.display = 'none');
 
-// let page = "home";
-// const pages = ["home","about-me","project","skills"];
-// const aboutLink = document.getElementById('aboutBtn');
+    // display chosen content section
+    document.getElementById(sectionId).style.display = 'block';
+}
 
-// function pageStatus() {
-//     pages.forEach(p => {
-//         document.getElementById(p).style.display = (page === p) ? "block" : "none";
-//     });
-// }
-
-// page = "about-me";
-// pageStatus();
+// display home page as default section
+showContent('home');

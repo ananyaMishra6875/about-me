@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ananya mishra</title>
+        <link rel="stylesheet" href="static/styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="header-container">
+                <a href="/" class="button">Home</a>
+                <a href="/contact" class="button">Contact Links</a>
+            </div>
+            <div class="menu-container">
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="/about">About Me</a></li>
+                        <li><a href="/projects">Projects</a></li>
+                        <li><a href="/skills">Skills</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            {% block content %}{% endblock %}
+        </main>        
+        <script src="static/js/script.js" defer></script>
+    </body>
+</html>
