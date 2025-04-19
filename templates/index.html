@@ -1,30 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>about me: ananya mishra!</title>
-        <link rel="stylesheet" href="static/styles.css">
-    </head>
-    <body>
-        <header>
-            <div class="header-container">
-                <a href="/" class="button">home</a>
-                <a href="/contact" class="button">contact links</a>
-            </div>
-            <div class="menu-container">
+{% extends "index.html" %}
+
+{% block content %}
+    <section>
+        <div class="about-content">
+            <p style="font-size:50px; margin:30px; padding-top:25px;"><mark class="highlight2">About Me: Ananya Mishra! </mark></p>
+            <p class="about-writing">&emsp;&emsp;hii~ my name is ananya mishra and thanks for visiting this webpage! this is my first webpage ever made lol so i appreciate it a lot :> </p>
+            <p class="about-writing">&emsp;&emsp;this is a great opportunity to introduce myself so here are a few things about me: i'm currently a grade 11 at rhhs and i'm interested in pursuing math, computer science, engineering or something to do with chemistry! stem kid lol. </p>
+            <p class="about-writing">&emsp;&emsp;i'm never really sure what to say when people ask "what do you like to do in your free time" or "what's your biggest hobby" but overall i enjoy playing video games (mostly nintendo), watching anime, and other things :p </p>
+            <p class="about-writing">&emsp;&emsp;below u can get to know more about my actual personality and a deeper look into my interests ^^</p>
+            
                 <nav>
-                    <ul class="nav-links">
-                        <li><a href="/about">about me</a></li>
+                    <ul class="nav-links" style="padding-top:10px;">
                         <li><a href="/interests">my interests</a></li>
                         <li><a href="/traits">personality traits</a></li>
                     </ul>
                 </nav>
-            </div>
-        </header>
-        <main>
-            {% block content %}{% endblock %}
-        </main>        
-        <script src="static/js/script.js" defer></script>
-    </body>
-</html>
+        </div>
+        <div class="about-side-bar">
+            <p style="margin-left:25px; margin-right:25px; font-size:20px;">here below are some links to the key things talked about on this page -></p>
+        </div>
+    </section>
+{% endblock %}
