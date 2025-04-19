@@ -10,13 +10,13 @@ def home():
 def about():
     return render_template('about.html')
 
-@app.route('/projects')
-def projects():
-    return render_template('projects.html')
+@app.route('/interests')
+def interests():
+    return render_template('interests.html')
 
-@app.route('/skills')
-def skills():
-    return render_template('skills.html')
+@app.route('/traits')
+def traits():
+    return render_template('traits.html')
 
 @app.route('/contact')
 def contact():
